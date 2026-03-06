@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ADMIN-001",
+    "password": "xylar@admin2026",
+    "name": "Xylar Admin",
+    "role": "admin",
+    "initials": "XA"
+  },
+  {
+    "id": "RM-00001",
+    "password": "xylar2026",
+    "name": "Arjun Mehta",
+    "role": "rm",
+    "initials": "AM",
+    "joined": "2026-02-22",
+    "status": "active"
+  },
+  {
+    "id": "RM-00002",
+    "password": "xylar2026rm2",
+    "name": "Priya Nair",
+    "role": "rm",
+    "initials": "PN",
+    "joined": "2026-02-22",
+    "status": "active"
+  }
+]

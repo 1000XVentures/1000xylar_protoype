@@ -23,6 +23,8 @@
   --radius: 6px;
   --radius-lg: 12px;
   --radius-xl: 16px;
+  --surface-sidebar: #F2F0EC;
+  --sidebar-width: 220px;
 }
 
 *,

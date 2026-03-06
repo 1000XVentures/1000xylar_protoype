@@ -29,12 +29,16 @@ export default function Login() {
   function handleSubmit(e) {
     e.preventDefault();
     setError("");
-    if (rmId.trim() !== "RM-00001" || password !== "xylar2026") {
-      setError("Invalid RM ID or password. Use RM-00001 / xylar2026");
+    const found = login(rmId.trim(), password);
+    if (!found) {
+      setError("Incorrect credentials. Please try again.");
       return;
     }
-    login(rmId.trim());
-    navigate("/home");
+    if (found.role === "admin") {
+      navigate("/admin/dashboard");
+    } else {
+      navigate("/home");
+    }
   }
 
   return (
@@ -93,7 +97,7 @@ export default function Login() {
           </div>
 
           {error && (
-            <div style={{ fontFamily: '"Inter", sans-serif', fontSize: 12, color: "var(--negative)", marginBottom: 14, marginTop: -12 }}>
+            <div style={{ fontFamily: '"Inter", sans-serif', fontSize: 12, color: "var(--negative)", marginBottom: 14, marginTop: -10 }}>
               {error}
             </div>
           )}

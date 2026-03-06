@@ -1,0 +1,81 @@
+[
+  {
+    "id": "C001",
+    "name": "Rajiv Shah",
+    "phone": "+91 98200 11234",
+    "email": "rajiv.shah@example.com",
+    "notes": "HNI, prefers aggressive positioning, 10yr horizon",
+    "rm_id": "RM-00001",
+    "preferred_portfolio": "aggressive",
+    "created_at": "2026-02-24",
+    "sessions": [
+      {
+        "id": "S001",
+        "date": "2026-03-02",
+        "portfolio_used": "aggressive",
+        "duration_minutes": 42,
+        "pdf_exported": true,
+        "acts_completed": 4
+      },
+      {
+        "id": "S002",
+        "date": "2026-02-26",
+        "portfolio_used": "aggressive",
+        "duration_minutes": 31,
+        "pdf_exported": false,
+        "acts_completed": 3
+      }
+    ]
+  },
+  {
+    "id": "C002",
+    "name": "Anita Desai",
+    "phone": "+91 98200 22345",
+    "email": "",
+    "notes": "Conservative, retirement planning focus",
+    "rm_id": "RM-00001",
+    "preferred_portfolio": "growth",
+    "created_at": "2026-02-25",
+    "sessions": [
+      {
+        "id": "S003",
+        "date": "2026-02-28",
+        "portfolio_used": "growth",
+        "duration_minutes": 28,
+        "pdf_exported": false,
+        "acts_completed": 4
+      }
+    ]
+  },
+  {
+    "id": "C003",
+    "name": "Meena Iyer",
+    "phone": "+91 98200 33456",
+    "email": "meena.iyer@example.com",
+    "notes": "First meeting, cautious about data sharing",
+    "rm_id": "RM-00002",
+    "preferred_portfolio": "conservative",
+    "created_at": "2026-03-01",
+    "sessions": [
+      {
+        "id": "S004",
+        "date": "2026-03-01",
+        "portfolio_used": "conservative",
+        "duration_minutes": 35,
+        "pdf_exported": false,
+        "acts_completed": 2
+      }
+    ]
+  },
+  {
+    "id": "C004",
+    "name": "Suresh Pillai",
+    "phone": "+91 98200 44567",
+    "email": "",
+    "notes": "Referred by Rajiv Shah",
+    "rm_id": "RM-00002",
+    "preferred_portfolio": null,
+    "created_at": "2026-03-04",
+    "sessions": []
+  }
+]
