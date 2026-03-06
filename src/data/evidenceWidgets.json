@@ -1,0 +1,379 @@
+{
+  "conservative": {
+    "allocation_drift": {
+      "signal": true,
+      "finding": "Equity allocation drifted 14pp above target over 9 months in 2021–22",
+      "why_matters": "Risk posture changed without an explicit rebalancing decision",
+      "confidence": "High",
+      "impact_rupees": 81000,
+      "impact_bps": 190,
+      "drift_pp_threshold": 15,
+      "drift_periods_triggered": 2,
+      "baseline": { "equity_pct": 55, "debt_pct": 35, "hybrid_pct": 10 },
+      "marker_date": "2021-09",
+      "counterfactual": "Xylar policy: rebalance when equity drift exceeds 15pp for 2 consecutive periods",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "drift_timeline": [
+        { "period": "2019-Q3", "equity_pct": 54, "debt_pct": 36, "hybrid_pct": 10, "drift_pp": 1 },
+        { "period": "2020-Q1", "equity_pct": 51, "debt_pct": 37, "hybrid_pct": 12, "drift_pp": 4 },
+        { "period": "2020-Q3", "equity_pct": 57, "debt_pct": 33, "hybrid_pct": 10, "drift_pp": 2 },
+        { "period": "2021-Q1", "equity_pct": 61, "debt_pct": 29, "hybrid_pct": 10, "drift_pp": 6 },
+        { "period": "2021-Q3", "equity_pct": 69, "debt_pct": 22, "hybrid_pct": 9, "drift_pp": 14 },
+        { "period": "2022-Q1", "equity_pct": 67, "debt_pct": 24, "hybrid_pct": 9, "drift_pp": 12 },
+        { "period": "2022-Q3", "equity_pct": 58, "debt_pct": 32, "hybrid_pct": 10, "drift_pp": 3 },
+        { "period": "2023-Q1", "equity_pct": 56, "debt_pct": 34, "hybrid_pct": 10, "drift_pp": 1 },
+        { "period": "2023-Q3", "equity_pct": 55, "debt_pct": 35, "hybrid_pct": 10, "drift_pp": 0 },
+        { "period": "2024-Q1", "equity_pct": 56, "debt_pct": 34, "hybrid_pct": 10, "drift_pp": 1 },
+        { "period": "2024-Q3", "equity_pct": 57, "debt_pct": 33, "hybrid_pct": 10, "drift_pp": 2 },
+        { "period": "2025-Q1", "equity_pct": 55, "debt_pct": 35, "hybrid_pct": 10, "drift_pp": 0 }
+      ]
+    },
+    "selection_quality": {
+      "signal": true,
+      "finding": "HDFC Flexi Cap was deployed at 68th percentile — below Xylar's 75th threshold",
+      "why_matters": "Entry at below-threshold rank compresses the compounding base from day one",
+      "confidence": "Medium",
+      "impact_rupees": 62000,
+      "impact_bps": 145,
+      "disclosure": "Rank at entry uses only information available on that date — not hindsight",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "entry_events": [
+        {
+          "date": "2019-06",
+          "fund": "HDFC Flexi Cap Fund",
+          "amount": 750000,
+          "rank_percentile_at_entry": 68,
+          "xylar_rec_percentile": 84,
+          "category": "Flexi Cap",
+          "quartile": "Top",
+          "current_value_client": 980000,
+          "current_value_xylar_rec": 1042000,
+          "delta": -62000
+        }
+      ],
+      "drift_dual_line": [
+        { "period": "2019-Q3", "client_avg_percentile": 68, "xylar_avg_percentile": 84 },
+        { "period": "2020-Q1", "client_avg_percentile": 65, "xylar_avg_percentile": 82 },
+        { "period": "2020-Q3", "client_avg_percentile": 70, "xylar_avg_percentile": 83 },
+        { "period": "2021-Q1", "client_avg_percentile": 72, "xylar_avg_percentile": 85 },
+        { "period": "2021-Q3", "client_avg_percentile": 69, "xylar_avg_percentile": 82 },
+        { "period": "2022-Q1", "client_avg_percentile": 66, "xylar_avg_percentile": 80 },
+        { "period": "2022-Q3", "client_avg_percentile": 68, "xylar_avg_percentile": 81 },
+        { "period": "2023-Q1", "client_avg_percentile": 71, "xylar_avg_percentile": 83 },
+        { "period": "2023-Q3", "client_avg_percentile": 73, "xylar_avg_percentile": 84 },
+        { "period": "2024-Q1", "client_avg_percentile": 72, "xylar_avg_percentile": 84 },
+        { "period": "2024-Q3", "client_avg_percentile": 70, "xylar_avg_percentile": 83 },
+        { "period": "2025-Q1", "client_avg_percentile": 71, "xylar_avg_percentile": 84 }
+      ]
+    },
+    "tax": {
+      "signal": false,
+      "stcg_exposure": 0,
+      "ltcg_exposure": 540000,
+      "finding": "No STCG exposure — all gains are long-term",
+      "why_matters": "LTCG above ₹1.25L is taxed at 12.5% — consider harvesting if approaching year-end",
+      "confidence": "High",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "quarterly_breakdown": [
+        { "period": "2024-Q1", "stcg": 0, "ltcg": 380000 },
+        { "period": "2024-Q2", "stcg": 0, "ltcg": 420000 },
+        { "period": "2024-Q3", "stcg": 0, "ltcg": 490000 },
+        { "period": "2024-Q4", "stcg": 0, "ltcg": 540000 }
+      ]
+    }
+  },
+  "growth": {
+    "allocation_drift": {
+      "signal": true,
+      "finding": "Equity sleeve ran at 78–82% for 14 months against a 70% target",
+      "why_matters": "Excess equity in the 2021 rally delayed risk normalization — amplifying 2022 drawdown",
+      "confidence": "High",
+      "impact_rupees": 118000,
+      "impact_bps": 175,
+      "drift_pp_threshold": 15,
+      "drift_periods_triggered": 3,
+      "baseline": { "equity_pct": 70, "debt_pct": 20, "hybrid_pct": 10 },
+      "marker_date": "2021-08",
+      "counterfactual": "Xylar policy: rebalance when equity drift exceeds 15pp for 2 consecutive periods",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "drift_timeline": [
+        { "period": "2019-Q1", "equity_pct": 70, "debt_pct": 20, "hybrid_pct": 10, "drift_pp": 0 },
+        { "period": "2019-Q3", "equity_pct": 72, "debt_pct": 19, "hybrid_pct": 9, "drift_pp": 2 },
+        { "period": "2020-Q1", "equity_pct": 66, "debt_pct": 22, "hybrid_pct": 12, "drift_pp": 4 },
+        { "period": "2020-Q3", "equity_pct": 73, "debt_pct": 18, "hybrid_pct": 9, "drift_pp": 3 },
+        { "period": "2021-Q1", "equity_pct": 78, "debt_pct": 14, "hybrid_pct": 8, "drift_pp": 8 },
+        { "period": "2021-Q3", "equity_pct": 82, "debt_pct": 11, "hybrid_pct": 7, "drift_pp": 12 },
+        { "period": "2022-Q1", "equity_pct": 80, "debt_pct": 13, "hybrid_pct": 7, "drift_pp": 10 },
+        { "period": "2022-Q3", "equity_pct": 71, "debt_pct": 19, "hybrid_pct": 10, "drift_pp": 1 },
+        { "period": "2023-Q1", "equity_pct": 72, "debt_pct": 19, "hybrid_pct": 9, "drift_pp": 2 },
+        { "period": "2023-Q3", "equity_pct": 74, "debt_pct": 17, "hybrid_pct": 9, "drift_pp": 4 },
+        { "period": "2024-Q1", "equity_pct": 73, "debt_pct": 18, "hybrid_pct": 9, "drift_pp": 3 },
+        { "period": "2024-Q3", "equity_pct": 75, "debt_pct": 16, "hybrid_pct": 9, "drift_pp": 5 }
+      ]
+    },
+    "overlap": {
+      "signal": true,
+      "finding": "Mirae Large Cap and HDFC Mid Cap share 44% holdings overlap — reducing effective diversification",
+      "why_matters": "Shared Infosys, HDFC Bank, and Reliance positions meant both funds fell in tandem during the 2022 correction",
+      "confidence": "High",
+      "impact_rupees": 64000,
+      "impact_bps": 95,
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "counterfactual": "Xylar policy: no two funds may share >40% holdings overlap in the same portfolio",
+      "clusters": [
+        {
+          "funds": ["Mirae Asset Large Cap Fund", "HDFC Mid Cap Opportunities Fund"],
+          "avg_overlap_pct": 44,
+          "cluster_weight_pct": 45,
+          "top_shared_holdings": [
+            { "stock": "HDFC Bank", "funds_count": 2 },
+            { "stock": "Infosys", "funds_count": 2 },
+            { "stock": "Reliance Industries", "funds_count": 2 },
+            { "stock": "ICICI Bank", "funds_count": 2 }
+          ]
+        }
+      ]
+    },
+    "selection_quality": {
+      "signal": true,
+      "finding": "₹6L deployed into ICICI Pru Balanced Advantage when ranked 48th percentile",
+      "why_matters": "Deployment at below-threshold rank compounds into persistent return drag",
+      "confidence": "Medium",
+      "impact_rupees": 142000,
+      "impact_bps": 210,
+      "disclosure": "Rank at entry uses only information available on that date — not hindsight",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "entry_events": [
+        {
+          "date": "2022-09",
+          "fund": "ICICI Pru Balanced Advantage Fund",
+          "amount": 600000,
+          "rank_percentile_at_entry": 48,
+          "xylar_rec_percentile": 78,
+          "category": "Dynamic Asset Allocation",
+          "quartile": "Third",
+          "current_value_client": 667200,
+          "current_value_xylar_rec": 809200,
+          "delta": -142000
+        }
+      ],
+      "drift_dual_line": [
+        { "period": "2019-Q1", "client_avg_percentile": 74, "xylar_avg_percentile": 84 },
+        { "period": "2019-Q3", "client_avg_percentile": 72, "xylar_avg_percentile": 83 },
+        { "period": "2020-Q1", "client_avg_percentile": 70, "xylar_avg_percentile": 82 },
+        { "period": "2020-Q3", "client_avg_percentile": 73, "xylar_avg_percentile": 83 },
+        { "period": "2021-Q1", "client_avg_percentile": 75, "xylar_avg_percentile": 84 },
+        { "period": "2021-Q3", "client_avg_percentile": 72, "xylar_avg_percentile": 83 },
+        { "period": "2022-Q1", "client_avg_percentile": 68, "xylar_avg_percentile": 82 },
+        { "period": "2022-Q3", "client_avg_percentile": 58, "xylar_avg_percentile": 80 },
+        { "period": "2023-Q1", "client_avg_percentile": 60, "xylar_avg_percentile": 79 },
+        { "period": "2023-Q3", "client_avg_percentile": 62, "xylar_avg_percentile": 80 },
+        { "period": "2024-Q1", "client_avg_percentile": 63, "xylar_avg_percentile": 80 },
+        { "period": "2024-Q3", "client_avg_percentile": 64, "xylar_avg_percentile": 81 }
+      ]
+    },
+    "tax": {
+      "signal": true,
+      "stcg_exposure": 180000,
+      "ltcg_exposure": 920000,
+      "rolldown_90d": 180000,
+      "finding": "₹1.8L in gains are currently STCG-exposed — pacing exits 67 days saves ~₹27,000 in tax",
+      "why_matters": "STCG gains are taxed at 20% vs LTCG at 12.5% — an 8pp difference on the same gain",
+      "confidence": "High",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "quarterly_breakdown": [
+        { "period": "2024-Q1", "stcg": 80000, "ltcg": 680000 },
+        { "period": "2024-Q2", "stcg": 110000, "ltcg": 740000 },
+        { "period": "2024-Q3", "stcg": 150000, "ltcg": 830000 },
+        { "period": "2024-Q4", "stcg": 180000, "ltcg": 920000 }
+      ]
+    }
+  },
+  "aggressive": {
+    "allocation_drift": {
+      "signal": true,
+      "finding": "Equity reached 93% against an 85% target — held for 6 months into the 2022 correction",
+      "why_matters": "Concentrated equity with no rebalancing amplified the 2022 correction losses by an estimated ₹1.96L",
+      "confidence": "High",
+      "impact_rupees": 196000,
+      "impact_bps": 245,
+      "drift_pp_threshold": 15,
+      "drift_periods_triggered": 3,
+      "baseline": { "equity_pct": 85, "debt_pct": 10, "hybrid_pct": 5 },
+      "marker_date": "2022-01",
+      "counterfactual": "Xylar policy: rebalance when equity drift exceeds 15pp for 2 consecutive periods",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "drift_timeline": [
+        { "period": "2019-Q1", "equity_pct": 85, "debt_pct": 10, "hybrid_pct": 5, "drift_pp": 0 },
+        { "period": "2019-Q3", "equity_pct": 87, "debt_pct": 9, "hybrid_pct": 4, "drift_pp": 2 },
+        { "period": "2020-Q1", "equity_pct": 82, "debt_pct": 12, "hybrid_pct": 6, "drift_pp": 3 },
+        { "period": "2020-Q3", "equity_pct": 88, "debt_pct": 8, "hybrid_pct": 4, "drift_pp": 3 },
+        { "period": "2021-Q1", "equity_pct": 91, "debt_pct": 6, "hybrid_pct": 3, "drift_pp": 6 },
+        { "period": "2021-Q3", "equity_pct": 93, "debt_pct": 5, "hybrid_pct": 2, "drift_pp": 8 },
+        { "period": "2022-Q1", "equity_pct": 93, "debt_pct": 5, "hybrid_pct": 2, "drift_pp": 8 },
+        { "period": "2022-Q3", "equity_pct": 87, "debt_pct": 9, "hybrid_pct": 4, "drift_pp": 2 },
+        { "period": "2023-Q1", "equity_pct": 88, "debt_pct": 8, "hybrid_pct": 4, "drift_pp": 3 },
+        { "period": "2023-Q3", "equity_pct": 89, "debt_pct": 8, "hybrid_pct": 3, "drift_pp": 4 },
+        { "period": "2024-Q1", "equity_pct": 91, "debt_pct": 6, "hybrid_pct": 3, "drift_pp": 6 },
+        { "period": "2024-Q3", "equity_pct": 92, "debt_pct": 6, "hybrid_pct": 2, "drift_pp": 7 }
+      ]
+    },
+    "overlap": {
+      "signal": true,
+      "finding": "3-fund overlap cluster (Mirae, HDFC Flexi, Axis Bluechip) with 71% average overlap — 53% of portfolio weight",
+      "why_matters": "In the 2022 correction, all three fell simultaneously — the illusion of diversification at scale",
+      "confidence": "High",
+      "impact_rupees": 223000,
+      "impact_bps": 280,
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "counterfactual": "Xylar policy: maximum 40% overlap between any two funds; replace Axis Bluechip with a mid-cap or global fund",
+      "clusters": [
+        {
+          "funds": ["Mirae Asset Large Cap Fund", "HDFC Flexi Cap Fund", "Axis Bluechip Fund"],
+          "avg_overlap_pct": 71,
+          "cluster_weight_pct": 53,
+          "top_shared_holdings": [
+            { "stock": "Infosys", "funds_count": 3 },
+            { "stock": "HDFC Bank", "funds_count": 3 },
+            { "stock": "Reliance Industries", "funds_count": 3 },
+            { "stock": "ICICI Bank", "funds_count": 2 },
+            { "stock": "TCS", "funds_count": 2 }
+          ]
+        }
+      ]
+    },
+    "selection_quality": {
+      "signal": true,
+      "finding": "₹13L deployed across two funds at bottom-quartile entry ranks",
+      "why_matters": "Entry at below-threshold rank compounds into persistent return drag — the gap widens over time",
+      "confidence": "Medium",
+      "impact_rupees": 223000,
+      "impact_bps": 280,
+      "disclosure": "Rank at entry uses only information available on that date — not hindsight",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "entry_events": [
+        {
+          "date": "2021-03",
+          "fund": "SBI Mid Cap Fund",
+          "amount": 500000,
+          "rank_percentile_at_entry": 18,
+          "xylar_rec_percentile": 82,
+          "category": "Mid Cap",
+          "quartile": "Bottom",
+          "current_value_client": 618000,
+          "current_value_xylar_rec": 841000,
+          "delta": -223000
+        },
+        {
+          "date": "2019-01",
+          "fund": "Axis Bluechip Fund",
+          "amount": 800000,
+          "rank_percentile_at_entry": 34,
+          "xylar_rec_percentile": 76,
+          "category": "Large Cap",
+          "quartile": "Bottom",
+          "current_value_client": 1068000,
+          "current_value_xylar_rec": 1152000,
+          "delta": -84000
+        }
+      ],
+      "drift_dual_line": [
+        { "period": "2019-Q1", "client_avg_percentile": 62, "xylar_avg_percentile": 82 },
+        { "period": "2019-Q3", "client_avg_percentile": 60, "xylar_avg_percentile": 81 },
+        { "period": "2020-Q1", "client_avg_percentile": 58, "xylar_avg_percentile": 82 },
+        { "period": "2020-Q3", "client_avg_percentile": 63, "xylar_avg_percentile": 83 },
+        { "period": "2021-Q1", "client_avg_percentile": 55, "xylar_avg_percentile": 81 },
+        { "period": "2021-Q3", "client_avg_percentile": 50, "xylar_avg_percentile": 82 },
+        { "period": "2022-Q1", "client_avg_percentile": 46, "xylar_avg_percentile": 80 },
+        { "period": "2022-Q3", "client_avg_percentile": 44, "xylar_avg_percentile": 79 },
+        { "period": "2023-Q1", "client_avg_percentile": 48, "xylar_avg_percentile": 80 },
+        { "period": "2023-Q3", "client_avg_percentile": 50, "xylar_avg_percentile": 81 },
+        { "period": "2024-Q1", "client_avg_percentile": 49, "xylar_avg_percentile": 80 },
+        { "period": "2024-Q3", "client_avg_percentile": 47, "xylar_avg_percentile": 80 }
+      ]
+    },
+    "bad_apples": {
+      "signal": true,
+      "finding": "SBI Mid Cap Fund has ranked in the bottom quartile for 3 consecutive quarters",
+      "why_matters": "Persistent underperformance compounds — each quarter below threshold increases the opportunity cost",
+      "confidence": "High",
+      "impact_rupees": 89000,
+      "impact_bps": 112,
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "funds": [
+        {
+          "name": "SBI Mid Cap Fund",
+          "category": "Mid Cap",
+          "bottom_quartile_quarters": 3,
+          "rank_timeline": [
+            { "period": "2024-Q2", "percentile": 22 },
+            { "period": "2024-Q3", "percentile": 19 },
+            { "period": "2024-Q4", "percentile": 21 }
+          ],
+          "underperforms_6m": true,
+          "underperforms_12m": true,
+          "benchmark_gap_6m": -4.2,
+          "benchmark_gap_12m": -3.8
+        }
+      ]
+    },
+    "tax": {
+      "signal": true,
+      "stcg_exposure": 320000,
+      "ltcg_exposure": 840000,
+      "rolldown_90d": 320000,
+      "finding": "₹3.2L in gains are currently STCG-exposed — pacing exits by 67 days saves approximately ₹48,000 in tax",
+      "why_matters": "STCG at 20% vs LTCG at 12.5% — the same gain taxed 7.5pp higher simply due to holding period",
+      "confidence": "High",
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "quarterly_breakdown": [
+        { "period": "2024-Q1", "stcg": 120000, "ltcg": 680000 },
+        { "period": "2024-Q2", "stcg": 210000, "ltcg": 720000 },
+        { "period": "2024-Q3", "stcg": 280000, "ltcg": 790000 },
+        { "period": "2024-Q4", "stcg": 320000, "ltcg": 840000 }
+      ]
+    },
+    "rec_gap": {
+      "signal": true,
+      "finding": "In Mid Cap, client holds 21st percentile fund vs Xylar's 82nd percentile recommendation",
+      "why_matters": "The gap in selection rank compounds — over 5 years, a 60pp rank gap translates to ~3pp XIRR difference",
+      "confidence": "Medium",
+      "impact_rupees": 142000,
+      "impact_bps": 178,
+      "data_as_of": "2026-03-05",
+      "source": "CAMS RTA",
+      "categories": [
+        {
+          "category": "Mid Cap",
+          "client_funds": ["SBI Mid Cap Fund"],
+          "xylar_rec": ["Nippon India Mid Cap Fund", "HDFC Mid Cap Opportunities"],
+          "client_avg_rank": 21,
+          "xylar_avg_rank": 79,
+          "gap": 58,
+          "client_overlap_to_rec_pct": 34
+        },
+        {
+          "category": "Large Cap",
+          "client_funds": ["Axis Bluechip Fund"],
+          "xylar_rec": ["Mirae Asset Large Cap Fund"],
+          "client_avg_rank": 34,
+          "xylar_avg_rank": 76,
+          "gap": 42,
+          "client_overlap_to_rec_pct": 62
+        }
+      ]
+    }
+  }
+}

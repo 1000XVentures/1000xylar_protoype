@@ -1,0 +1,792 @@
+[
+  {
+    "id": "conservative",
+    "label": "Conservative Portfolio",
+    "description": "Capital preservation with steady compounding",
+    "riskProfile": "Low–Medium",
+    "horizon": "5+ years",
+    "summary": {
+      "totalInvested": 7500000,
+      "totalWithdrawn": 800000,
+      "netInvested": 6700000,
+      "currentValue": 9240000,
+      "xylarValue": 10710000,
+      "benchmarkValue": 9990000,
+      "xirr_actual": 9.4,
+      "xirr_xylar": 11.8,
+      "xirr_benchmark": 10.1,
+      "delta_rupees": 186000,
+      "alpha_vs_benchmark": -0.7,
+      "fund_count": 5,
+      "covered_categories": 5,
+      "uncovered_exposure_pct": 0,
+      "effective_diversification_stocks": 187,
+      "top_stock_exposure_pct": 6.2,
+      "top_amc_concentration_pct": 38,
+      "stcg_exposure": 0,
+      "ltcg_exposure": 540000,
+      "data_as_of": "2026-03-05T09:30:00",
+      "source": "CAMS RTA",
+      "drivers": {
+        "selection_quality": -62000,
+        "drift_delayed_exits": -81000,
+        "overlap_redundancy": 0
+      }
+    },
+    "funds": [
+      {
+        "id": "F001",
+        "name": "HDFC Flexi Cap Fund",
+        "category": "Flexi Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 30,
+        "invested": 2250000,
+        "currentValue": 2980000,
+        "xirr": 11.2,
+        "units": 48210,
+        "nav": 61.82,
+        "startDate": "2019-06",
+        "role": "Core Equity Beta",
+        "fitnessScore": 74,
+        "rank_percentile_current": 68,
+        "benchmark": "Nifty 500 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F002",
+        "name": "SBI Bluechip Fund",
+        "category": "Large Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 25,
+        "invested": 1875000,
+        "currentValue": 2340000,
+        "xirr": 10.4,
+        "units": 72840,
+        "nav": 32.12,
+        "startDate": "2020-01",
+        "role": "Stability Anchor",
+        "fitnessScore": 71,
+        "rank_percentile_current": 62,
+        "benchmark": "Nifty 100 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F003",
+        "name": "ICICI Pru Short Term Fund",
+        "category": "Short Duration",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 20,
+        "invested": 1500000,
+        "currentValue": 1740000,
+        "xirr": 8.2,
+        "units": 56480,
+        "nav": 30.81,
+        "startDate": "2019-06",
+        "role": "Debt Buffer",
+        "fitnessScore": 82,
+        "rank_percentile_current": 78,
+        "benchmark": "CRISIL Short Term",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F004",
+        "name": "Parag Parikh Flexi Cap Fund",
+        "category": "Flexi Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 15,
+        "invested": 1125000,
+        "currentValue": 1350000,
+        "xirr": 9.8,
+        "units": 18420,
+        "nav": 73.29,
+        "startDate": "2021-03",
+        "role": "Global Diversifier",
+        "fitnessScore": 88,
+        "rank_percentile_current": 84,
+        "benchmark": "Nifty 500 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F005",
+        "name": "Axis Overnight Fund",
+        "category": "Overnight",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 10,
+        "invested": 750000,
+        "currentValue": 830000,
+        "xirr": 6.8,
+        "units": 42100,
+        "nav": 19.72,
+        "startDate": "2022-06",
+        "role": "Liquidity Reserve",
+        "fitnessScore": 90,
+        "rank_percentile_current": 88,
+        "benchmark": "CRISIL Overnight",
+        "data_as_of": "2026-03-05"
+      }
+    ],
+    "signals": {
+      "bad_apples": [],
+      "overlap_clusters": [],
+      "allocation_drift": true,
+      "poor_entry_events": [],
+      "tax_stcg_exposure": 0,
+      "rec_gap_categories": []
+    },
+    "timeline_markers": [
+      { "date": "2019-06", "type": "action", "label": "SIP Started", "amount": 50000, "impact_rupees": 0, "widget": null },
+      { "date": "2020-01", "type": "action", "label": "Added SBI Bluechip", "amount": 500000, "impact_rupees": 0, "widget": null },
+      { "date": "2020-03", "type": "missed", "label": "COVID low — missed rebalance", "amount": 0, "impact_rupees": -42000, "widget": "allocation_drift" },
+      { "date": "2021-03", "type": "lumpsum", "label": "Lumpsum — Parag Parikh", "amount": 600000, "impact_rupees": 0, "widget": null },
+      { "date": "2021-09", "type": "drift", "label": "Equity drifted +14pp", "amount": 0, "impact_rupees": -38000, "widget": "allocation_drift" },
+      { "date": "2022-06", "type": "action", "label": "Added Overnight Fund", "amount": 300000, "impact_rupees": 0, "widget": null },
+      { "date": "2023-04", "type": "action", "label": "SIP increased to ₹75K", "amount": 75000, "impact_rupees": 0, "widget": null },
+      { "date": "2024-01", "type": "action", "label": "Partial withdrawal", "amount": -800000, "impact_rupees": 0, "widget": null }
+    ],
+    "leakage_drivers": [
+      {
+        "rank": 1,
+        "type": "drift_delayed_exits",
+        "label": "Drift persisted 9 months (2021–22)",
+        "impact_rupees": -81000,
+        "impact_bps": -190,
+        "confidence": "High",
+        "date_start": "2021-06",
+        "date_end": "2022-03",
+        "widget": "allocation_drift",
+        "what_happened": "Equity allocation drifted from 55% target to 69% over 9 months",
+        "why_mattered": "Risk posture changed without an explicit rebalancing decision",
+        "counterfactual": "Xylar policy: rebalance when drift exceeds 15pp for 2 consecutive periods"
+      },
+      {
+        "rank": 2,
+        "type": "selection_quality",
+        "label": "Sub-optimal fund at entry (2019)",
+        "impact_rupees": -62000,
+        "impact_bps": -145,
+        "confidence": "Medium",
+        "date_start": "2019-06",
+        "date_end": "2021-04",
+        "widget": "selection_quality",
+        "what_happened": "HDFC Flexi Cap ranked 68th percentile at deployment — Xylar threshold is 75th",
+        "why_mattered": "Sub-threshold selection compressed compounding base",
+        "counterfactual": "Xylar policy: only deploy into funds ranked above 75th percentile in category"
+      },
+      {
+        "rank": 3,
+        "type": "missed_rebalance",
+        "label": "COVID low rebalance missed (Mar 2020)",
+        "impact_rupees": -42000,
+        "impact_bps": -98,
+        "confidence": "Medium",
+        "date_start": "2020-03",
+        "date_end": "2020-06",
+        "widget": "allocation_drift",
+        "what_happened": "Market correction created a 40% equity discount — no rebalancing action taken",
+        "why_mattered": "Rule-based rebalancing would have systematically bought equity at the low",
+        "counterfactual": "Xylar policy: automatic rebalance trigger when category drops >20% below baseline"
+      }
+    ],
+    "watchlist": [
+      "HDFC Flexi Cap rank has declined to 68th percentile — monitor for 2 more quarters before action",
+      "STCG window closes in 0 days — ₹0 exposure, no action needed",
+      "Equity allocation at 55% — within Xylar target band, no rebalance needed"
+    ],
+    "key_truths": [
+      "This portfolio's underperformance vs Xylar policy is primarily an exit-timing problem, not a selection problem",
+      "Effective diversification plateaued at 5 funds — 187 effective stocks, above the 160-stock threshold",
+      "The Overnight Fund allocation (10%) is providing liquidity buffer but is reducing overall XIRR by ~0.4pp"
+    ],
+    "insights_act1": [
+      {
+        "id": "I001",
+        "headline": "Conservative allocation outperformed in 3 of 5 calendar years",
+        "so_what": "Stability anchor funds (ICICI Short Term, Overnight) buffered the 2022 correction",
+        "confidence": "High",
+        "visual_type": "line"
+      }
+    ],
+    "memo": {
+      "snapshot": {
+        "value": 9240000,
+        "fund_count": 5,
+        "eff_diversification": 187,
+        "top_stock_pct": 6.2,
+        "top_amc_pct": 38,
+        "covered_categories": 5
+      }
+    }
+  },
+  {
+    "id": "growth",
+    "label": "Growth Portfolio",
+    "description": "Balanced equity with disciplined compounding",
+    "riskProfile": "Medium–High",
+    "horizon": "7+ years",
+    "summary": {
+      "totalInvested": 12000000,
+      "totalWithdrawn": 1200000,
+      "netInvested": 10800000,
+      "currentValue": 16200000,
+      "xylarValue": 19440000,
+      "benchmarkValue": 17760000,
+      "xirr_actual": 11.8,
+      "xirr_xylar": 14.3,
+      "xirr_benchmark": 12.6,
+      "delta_rupees": 324000,
+      "alpha_vs_benchmark": -0.8,
+      "fund_count": 6,
+      "covered_categories": 6,
+      "uncovered_exposure_pct": 0,
+      "effective_diversification_stocks": 214,
+      "top_stock_exposure_pct": 7.8,
+      "top_amc_concentration_pct": 42,
+      "stcg_exposure": 180000,
+      "ltcg_exposure": 920000,
+      "data_as_of": "2026-03-05T09:30:00",
+      "source": "CAMS RTA",
+      "drivers": {
+        "selection_quality": -142000,
+        "drift_delayed_exits": -118000,
+        "overlap_redundancy": -64000
+      }
+    },
+    "funds": [
+      {
+        "id": "F006",
+        "name": "Mirae Asset Large Cap Fund",
+        "category": "Large Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 25,
+        "invested": 3000000,
+        "currentValue": 4200000,
+        "xirr": 13.2,
+        "units": 84000,
+        "nav": 50.00,
+        "startDate": "2018-09",
+        "role": "Large Cap Core",
+        "fitnessScore": 81,
+        "rank_percentile_current": 76,
+        "benchmark": "Nifty 100 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F007",
+        "name": "HDFC Mid Cap Opportunities Fund",
+        "category": "Mid Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 20,
+        "invested": 2400000,
+        "currentValue": 3528000,
+        "xirr": 14.8,
+        "units": 75200,
+        "nav": 46.92,
+        "startDate": "2019-03",
+        "role": "Mid Cap Engine",
+        "fitnessScore": 79,
+        "rank_percentile_current": 72,
+        "benchmark": "Nifty Midcap 150 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F008",
+        "name": "Parag Parikh Flexi Cap Fund",
+        "category": "Flexi Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 20,
+        "invested": 2400000,
+        "currentValue": 3312000,
+        "xirr": 12.6,
+        "units": 45200,
+        "nav": 73.29,
+        "startDate": "2020-06",
+        "role": "Global Diversifier",
+        "fitnessScore": 88,
+        "rank_percentile_current": 84,
+        "benchmark": "Nifty 500 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F009",
+        "name": "SBI Small Cap Fund",
+        "category": "Small Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 15,
+        "invested": 1800000,
+        "currentValue": 2808000,
+        "xirr": 16.2,
+        "units": 46200,
+        "nav": 60.78,
+        "startDate": "2021-01",
+        "role": "High Growth Satellite",
+        "fitnessScore": 76,
+        "rank_percentile_current": 71,
+        "benchmark": "Nifty Smallcap 250 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F010",
+        "name": "Axis Corporate Bond Fund",
+        "category": "Corporate Bond",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 12,
+        "invested": 1440000,
+        "currentValue": 1684800,
+        "xirr": 8.4,
+        "units": 91200,
+        "nav": 18.47,
+        "startDate": "2019-06",
+        "role": "Income Cushion",
+        "fitnessScore": 77,
+        "rank_percentile_current": 72,
+        "benchmark": "CRISIL Corporate Bond",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F011",
+        "name": "ICICI Pru Balanced Advantage Fund",
+        "category": "Dynamic Asset Allocation",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 8,
+        "invested": 960000,
+        "currentValue": 667200,
+        "xirr": 7.2,
+        "units": 32400,
+        "nav": 20.59,
+        "startDate": "2022-09",
+        "role": "Volatility Buffer",
+        "fitnessScore": 64,
+        "rank_percentile_current": 48,
+        "benchmark": "Nifty 50 Hybrid TRI",
+        "data_as_of": "2026-03-05"
+      }
+    ],
+    "signals": {
+      "bad_apples": [],
+      "overlap_clusters": [
+        {
+          "funds": ["Mirae Asset Large Cap Fund", "HDFC Mid Cap Opportunities Fund"],
+          "avg_overlap_pct": 44,
+          "cluster_weight_pct": 45
+        }
+      ],
+      "allocation_drift": true,
+      "poor_entry_events": [
+        { "date": "2022-09", "fund": "ICICI Pru Balanced Advantage Fund", "rank_percentile_at_entry": 48 }
+      ],
+      "tax_stcg_exposure": 180000,
+      "rec_gap_categories": ["Dynamic Asset Allocation"]
+    },
+    "timeline_markers": [
+      { "date": "2018-09", "type": "action", "label": "SIP Started — Mirae Large Cap", "amount": 50000, "impact_rupees": 0, "widget": null },
+      { "date": "2019-03", "type": "action", "label": "Added HDFC Mid Cap", "amount": 400000, "impact_rupees": 0, "widget": null },
+      { "date": "2020-03", "type": "missed", "label": "COVID low — partial rebalance only", "amount": 500000, "impact_rupees": -88000, "widget": "allocation_drift" },
+      { "date": "2021-01", "type": "lumpsum", "label": "Lumpsum — SBI Small Cap", "amount": 800000, "impact_rupees": 0, "widget": null },
+      { "date": "2021-08", "type": "drift", "label": "Equity at 82% — above 70% target", "amount": 0, "impact_rupees": -118000, "widget": "allocation_drift" },
+      { "date": "2022-09", "type": "lumpsum", "label": "Lumpsum — ICICI Bal Adv (bottom quartile)", "amount": 600000, "impact_rupees": -142000, "widget": "selection_quality" },
+      { "date": "2023-06", "type": "action", "label": "Partial withdrawal", "amount": -1200000, "impact_rupees": 0, "widget": null },
+      { "date": "2024-06", "type": "action", "label": "SIP increased to ₹1L", "amount": 100000, "impact_rupees": 0, "widget": null }
+    ],
+    "leakage_drivers": [
+      {
+        "rank": 1,
+        "type": "selection_quality",
+        "label": "ICICI Bal Adv deployed into 48th percentile fund",
+        "impact_rupees": -142000,
+        "impact_bps": -210,
+        "confidence": "Medium",
+        "date_start": "2022-09",
+        "date_end": "2026-03",
+        "widget": "selection_quality",
+        "what_happened": "₹6L deployed into ICICI Bal Adv when it ranked 48th percentile in its category",
+        "why_mattered": "Deployment at below-threshold rank compounds into persistent return drag",
+        "counterfactual": "Xylar policy: only deploy into funds ranked above 75th percentile at entry date"
+      },
+      {
+        "rank": 2,
+        "type": "drift_delayed_exits",
+        "label": "Equity drift uncorrected for 14 months (2021–22)",
+        "impact_rupees": -118000,
+        "impact_bps": -175,
+        "confidence": "High",
+        "date_start": "2021-08",
+        "date_end": "2022-10",
+        "widget": "allocation_drift",
+        "what_happened": "Equity sleeve ran at 78–82% for 14 months against 70% target",
+        "why_mattered": "Excess equity in a bull run feels good, but it delayed risk normalization before 2022 correction",
+        "counterfactual": "Xylar policy: rebalance when drift exceeds 15pp for 2 periods"
+      },
+      {
+        "rank": 3,
+        "type": "overlap_redundancy",
+        "label": "Mirae + HDFC Mid Cap overlap cluster",
+        "impact_rupees": -64000,
+        "impact_bps": -95,
+        "confidence": "Medium",
+        "date_start": "2019-03",
+        "date_end": "2026-03",
+        "widget": "overlap",
+        "what_happened": "44% overlap between Mirae Large Cap and HDFC Mid Cap reduces effective diversification",
+        "why_mattered": "Shared holdings in top-5 positions mean these funds moved together in 2022 correction",
+        "counterfactual": "Xylar policy: no two funds in a portfolio may share >40% holding overlap"
+      }
+    ],
+    "watchlist": [
+      "ICICI Pru Balanced Advantage: ranked 48th percentile for 3 quarters — flag for review",
+      "STCG window: ₹1.8L in gains rolling to LTCG in the next 67 days — pace any exits",
+      "Equity allocation at 74% vs 70% target — approaching rebalance threshold"
+    ],
+    "key_truths": [
+      "The Balanced Advantage Fund entry in Sep 2022 was at below-threshold rank — this is the primary selection drag",
+      "Mid Cap allocation has delivered strong returns but created 44% overlap with Large Cap sleeve",
+      "SIP consistency over 7+ years has contributed more to returns than any single fund selection decision"
+    ],
+    "insights_act1": [
+      {
+        "id": "I002",
+        "headline": "Mid Cap has been the return engine — but it raised the portfolio's effective beta",
+        "so_what": "Growth came from mid and small cap outperformance, not from superior selection",
+        "confidence": "High",
+        "visual_type": "bar"
+      }
+    ],
+    "memo": {
+      "snapshot": {
+        "value": 16200000,
+        "fund_count": 6,
+        "eff_diversification": 214,
+        "top_stock_pct": 7.8,
+        "top_amc_pct": 42,
+        "covered_categories": 6
+      }
+    }
+  },
+  {
+    "id": "aggressive",
+    "label": "Aggressive Portfolio",
+    "description": "Maximum long-term growth, high equity concentration",
+    "riskProfile": "High",
+    "horizon": "10+ years",
+    "summary": {
+      "totalInvested": 18000000,
+      "totalWithdrawn": 2000000,
+      "netInvested": 16000000,
+      "currentValue": 27400000,
+      "xylarValue": 33820000,
+      "benchmarkValue": 29780000,
+      "xirr_actual": 13.4,
+      "xirr_xylar": 16.8,
+      "xirr_benchmark": 14.2,
+      "delta_rupees": 642000,
+      "alpha_vs_benchmark": -0.8,
+      "fund_count": 7,
+      "covered_categories": 7,
+      "uncovered_exposure_pct": 0,
+      "effective_diversification_stocks": 228,
+      "top_stock_exposure_pct": 9.4,
+      "top_amc_concentration_pct": 48,
+      "stcg_exposure": 320000,
+      "ltcg_exposure": 840000,
+      "data_as_of": "2026-03-05T09:30:00",
+      "source": "CAMS RTA",
+      "drivers": {
+        "selection_quality": -223000,
+        "drift_delayed_exits": -196000,
+        "overlap_redundancy": -223000
+      }
+    },
+    "funds": [
+      {
+        "id": "F012",
+        "name": "Mirae Asset Large Cap Fund",
+        "category": "Large Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 20,
+        "invested": 3600000,
+        "currentValue": 5544000,
+        "xirr": 14.2,
+        "units": 110880,
+        "nav": 50.00,
+        "startDate": "2018-06",
+        "role": "Large Cap Core",
+        "fitnessScore": 81,
+        "rank_percentile_current": 76,
+        "benchmark": "Nifty 100 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F013",
+        "name": "HDFC Flexi Cap Fund",
+        "category": "Flexi Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 18,
+        "invested": 3240000,
+        "currentValue": 4856400,
+        "xirr": 17.8,
+        "units": 78400,
+        "nav": 61.94,
+        "startDate": "2018-09",
+        "role": "Flexi Alpha",
+        "fitnessScore": 78,
+        "rank_percentile_current": 71,
+        "benchmark": "Nifty 500 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F014",
+        "name": "Axis Bluechip Fund",
+        "category": "Large Cap",
+        "covered": true,
+        "planType": "Regular",
+        "allocation_pct": 15,
+        "invested": 2700000,
+        "currentValue": 3618000,
+        "xirr": 11.2,
+        "units": 94200,
+        "nav": 38.41,
+        "startDate": "2019-01",
+        "role": "Large Cap Satellite",
+        "fitnessScore": 51,
+        "rank_percentile_current": 34,
+        "benchmark": "Nifty 100 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F015",
+        "name": "SBI Mid Cap Fund",
+        "category": "Mid Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 15,
+        "invested": 2700000,
+        "currentValue": 3483000,
+        "xirr": 10.6,
+        "units": 58400,
+        "nav": 59.64,
+        "startDate": "2021-03",
+        "role": "Mid Cap Bet",
+        "fitnessScore": 38,
+        "rank_percentile_current": 21,
+        "benchmark": "Nifty Midcap 150 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F016",
+        "name": "Nippon India Small Cap Fund",
+        "category": "Small Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 13,
+        "invested": 2340000,
+        "currentValue": 4024800,
+        "xirr": 19.4,
+        "units": 128400,
+        "nav": 31.35,
+        "startDate": "2020-09",
+        "role": "Small Cap Engine",
+        "fitnessScore": 86,
+        "rank_percentile_current": 82,
+        "benchmark": "Nifty Smallcap 250 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F017",
+        "name": "Quant Active Fund",
+        "category": "Multi Cap",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 12,
+        "invested": 2160000,
+        "currentValue": 3196800,
+        "xirr": 15.6,
+        "units": 21040,
+        "nav": 151.94,
+        "startDate": "2021-09",
+        "role": "Quant Alpha",
+        "fitnessScore": 69,
+        "rank_percentile_current": 62,
+        "benchmark": "Nifty 500 TRI",
+        "data_as_of": "2026-03-05"
+      },
+      {
+        "id": "F018",
+        "name": "ICICI Pru Technology Fund",
+        "category": "Sectoral",
+        "covered": true,
+        "planType": "Direct",
+        "allocation_pct": 7,
+        "invested": 1260000,
+        "currentValue": 2677800,
+        "xirr": 22.8,
+        "units": 42800,
+        "nav": 62.57,
+        "startDate": "2020-04",
+        "role": "Thematic Satellite",
+        "fitnessScore": 72,
+        "rank_percentile_current": 66,
+        "benchmark": "Nifty IT TRI",
+        "data_as_of": "2026-03-05"
+      }
+    ],
+    "signals": {
+      "bad_apples": [
+        {
+          "fund_id": "F015",
+          "name": "SBI Mid Cap Fund",
+          "bottom_quartile_quarters": 3,
+          "rank_timeline": [
+            { "period": "2024-Q2", "percentile": 22 },
+            { "period": "2024-Q3", "percentile": 19 },
+            { "period": "2024-Q4", "percentile": 21 }
+          ],
+          "underperforms_6m": true,
+          "underperforms_12m": true,
+          "benchmark_gap_6m": -4.2,
+          "benchmark_gap_12m": -3.8
+        },
+        {
+          "fund_id": "F014",
+          "name": "Axis Bluechip Fund",
+          "bottom_quartile_quarters": 2,
+          "rank_timeline": [
+            { "period": "2024-Q3", "percentile": 38 },
+            { "period": "2024-Q4", "percentile": 34 }
+          ],
+          "underperforms_6m": true,
+          "underperforms_12m": false,
+          "benchmark_gap_6m": -2.1,
+          "benchmark_gap_12m": -0.8
+        }
+      ],
+      "overlap_clusters": [
+        {
+          "funds": ["Mirae Asset Large Cap Fund", "HDFC Flexi Cap Fund", "Axis Bluechip Fund"],
+          "avg_overlap_pct": 71,
+          "cluster_weight_pct": 53,
+          "top_shared_holdings": [
+            { "stock": "Infosys", "funds_count": 3 },
+            { "stock": "HDFC Bank", "funds_count": 3 },
+            { "stock": "Reliance Industries", "funds_count": 3 },
+            { "stock": "ICICI Bank", "funds_count": 2 },
+            { "stock": "TCS", "funds_count": 2 }
+          ]
+        }
+      ],
+      "allocation_drift": true,
+      "poor_entry_events": [
+        {
+          "date": "2021-03",
+          "fund": "SBI Mid Cap Fund",
+          "amount": 500000,
+          "rank_percentile_at_entry": 18,
+          "xylar_rec_percentile": 82,
+          "category": "Mid Cap",
+          "quartile": "Bottom",
+          "current_value_client": 618000,
+          "current_value_xylar_rec": 841000,
+          "delta": -223000
+        }
+      ],
+      "tax_stcg_exposure": 320000,
+      "rec_gap_categories": ["Mid Cap", "Large Cap"]
+    },
+    "timeline_markers": [
+      { "date": "2018-06", "type": "action", "label": "SIP Started — Mirae Large Cap", "amount": 75000, "impact_rupees": 0, "widget": null },
+      { "date": "2018-09", "type": "action", "label": "Added HDFC Flexi Cap", "amount": 500000, "impact_rupees": 0, "widget": null },
+      { "date": "2019-01", "type": "lumpsum", "label": "Lumpsum — Axis Bluechip (Regular plan)", "amount": 800000, "impact_rupees": -84000, "widget": "selection_quality" },
+      { "date": "2020-04", "type": "action", "label": "Added ICICI Tech (COVID recovery bet)", "amount": 600000, "impact_rupees": 0, "widget": null },
+      { "date": "2020-09", "type": "action", "label": "Added Nippon Small Cap", "amount": 800000, "impact_rupees": 0, "widget": null },
+      { "date": "2021-03", "type": "lumpsum", "label": "Lumpsum — SBI Mid Cap (18th pct rank)", "amount": 500000, "impact_rupees": -223000, "widget": "selection_quality" },
+      { "date": "2021-09", "type": "lumpsum", "label": "Lumpsum — Quant Active", "amount": 600000, "impact_rupees": 0, "widget": null },
+      { "date": "2022-01", "type": "drift", "label": "Equity at 93% — severe drift", "amount": 0, "impact_rupees": -196000, "widget": "allocation_drift" },
+      { "date": "2023-04", "type": "action", "label": "Partial withdrawal ₹20L", "amount": -2000000, "impact_rupees": 0, "widget": null },
+      { "date": "2024-01", "type": "missed", "label": "SBI Mid Cap flagged — no action", "amount": 0, "impact_rupees": -89000, "widget": "bad_apples" }
+    ],
+    "leakage_drivers": [
+      {
+        "rank": 1,
+        "type": "selection_quality",
+        "label": "₹13L deployed into bottom-quartile funds at entry",
+        "impact_rupees": -223000,
+        "impact_bps": -280,
+        "confidence": "Medium",
+        "date_start": "2021-03",
+        "date_end": "2026-03",
+        "widget": "selection_quality",
+        "what_happened": "SBI Mid Cap entered at 18th percentile rank — Xylar would have used Nippon India Mid Cap at 82nd",
+        "why_mattered": "Entry at below-threshold rank compresses the compounding base from day one",
+        "counterfactual": "Xylar policy: only deploy into funds ranked above 75th percentile in their category at entry date"
+      },
+      {
+        "rank": 2,
+        "type": "overlap_redundancy",
+        "label": "3-fund overlap cluster (53% of portfolio weight)",
+        "impact_rupees": -223000,
+        "impact_bps": -280,
+        "confidence": "High",
+        "date_start": "2019-01",
+        "date_end": "2026-03",
+        "widget": "overlap",
+        "what_happened": "Mirae, HDFC Flexi Cap and Axis Bluechip share 71% average holdings overlap",
+        "why_mattered": "In the 2022 correction, all three fell simultaneously — the illusion of diversification",
+        "counterfactual": "Xylar policy: maximum 40% overlap between any two funds in the same portfolio"
+      },
+      {
+        "rank": 3,
+        "type": "drift_delayed_exits",
+        "label": "Equity at 93% for 6 months (Jan–Jun 2022)",
+        "impact_rupees": -196000,
+        "impact_bps": -245,
+        "confidence": "High",
+        "date_start": "2022-01",
+        "date_end": "2022-06",
+        "widget": "allocation_drift",
+        "what_happened": "Equity allocation reached 93% against an 85% target, held for 6 months",
+        "why_mattered": "Concentrated equity with no rebalancing amplified the 2022 correction losses",
+        "counterfactual": "Xylar policy: rebalance when drift exceeds 15pp for 2 consecutive periods"
+      }
+    ],
+    "watchlist": [
+      "SBI Mid Cap Fund: ranked 21st percentile for 3 consecutive quarters — action threshold met",
+      "STCG window: ₹3.2L in gains exposed — exits in next 67 days convert to LTCG (saves ₹48,000 in tax)",
+      "Axis Bluechip: Regular Plan with 0.8% extra expense ratio vs Direct — ₹21,600/yr in unnecessary drag"
+    ],
+    "key_truths": [
+      "The 3-fund overlap cluster (Mirae, HDFC Flexi, Axis Bluechip) creates the illusion of diversification — in a correction, all three fall together",
+      "SBI Mid Cap and Axis Bluechip are currently in the bottom quartile — they are the primary drag on portfolio XIRR",
+      "Axis Bluechip is a Regular Plan — the extra 0.8% expense ratio is an ongoing, unnecessary cost"
+    ],
+    "insights_act1": [
+      {
+        "id": "I003",
+        "headline": "High XIRR is masking two significant drags — overlap and a bottom-quartile mid cap fund",
+        "so_what": "Gross returns look strong, but the composition has embedded risks that will compound over time",
+        "confidence": "High",
+        "visual_type": "bar"
+      }
+    ],
+    "memo": {
+      "snapshot": {
+        "value": 27400000,
+        "fund_count": 7,
+        "eff_diversification": 228,
+        "top_stock_pct": 9.4,
+        "top_amc_pct": 48,
+        "covered_categories": 7
+      }
+    }
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "schemeProlif": [
+    { "year": "2015", "funds": 1624 },
+    { "year": "2016", "funds": 1812 },
+    { "year": "2017", "funds": 2044 },
+    { "year": "2018", "funds": 2335 },
+    { "year": "2019", "funds": 2596 },
+    { "year": "2020", "funds": 2891 },
+    { "year": "2021", "funds": 3180 },
+    { "year": "2022", "funds": 3401 },
+    { "year": "2023", "funds": 3624 },
+    { "year": "2024", "funds": 3892 }
+  ],
+  "sipVsLumpsum": [
+    { "category": "Large Cap", "sip_xirr": 13.2, "lumpsum_xirr": 9.8 },
+    { "category": "Mid Cap", "sip_xirr": 18.4, "lumpsum_xirr": 11.2 },
+    { "category": "Flexi Cap", "sip_xirr": 15.6, "lumpsum_xirr": 12.1 },
+    { "category": "Small Cap", "sip_xirr": 21.1, "lumpsum_xirr": 13.4 }
+  ],
+  "diversificationCurve": [
+    { "funds": 1, "eff_stocks": 48 },
+    { "funds": 2, "eff_stocks": 89 },
+    { "funds": 3, "eff_stocks": 134 },
+    { "funds": 4, "eff_stocks": 162 },
+    { "funds": 5, "eff_stocks": 171 },
+    { "funds": 6, "eff_stocks": 176 },
+    { "funds": 7, "eff_stocks": 178 },
+    { "funds": 8, "eff_stocks": 179 }
+  ]
+}
